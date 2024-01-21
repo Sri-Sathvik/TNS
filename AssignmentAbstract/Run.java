@@ -6,7 +6,7 @@ public class Run {
 		
 		Scanner sc=new Scanner(System.in);
 		
-		
+		Student S=null;
 		String category="";
 		
 		System.out.println("Enter Student id");       
@@ -38,9 +38,9 @@ public class Run {
 			
 			System.out.println("Enter Room Type");       
 			String roomType=sc.next();           
-			Hosteller H1=new Hosteller(studentId,studentName,department,gender,category,collegeFee,roomNumber,blockName,roomType);
+			S=new Hosteller(studentId,studentName,department,gender,category,collegeFee,roomNumber,blockName,roomType);
 			
-			System.out.println("Total College Fee is "+H1.calculateTotalFee());
+			System.out.println("Total College Fee is "+S.calculateTotalFee());
 		
 		}
 		else if(category.equals("DayScholar")) {
@@ -54,9 +54,9 @@ public class Run {
 			System.out.println("Enter Distance");       
 			float distance=sc.nextInt();
 			         
-			DayScholar D1=new DayScholar(studentId,studentName,department,gender,category,collegeFee,busNumber,distance);
+			S=new DayScholar(studentId,studentName,department,gender,category,collegeFee,busNumber,distance);
 			
-			System.out.println("Total College Fee is "+D1.calculateTotalFee());
+			System.out.println("Total College Fee is "+S.calculateTotalFee());
 		
 		}
 		
